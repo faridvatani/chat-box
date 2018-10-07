@@ -1,4 +1,4 @@
-const {app , BrowserWindow} = require('electron');
+import {app , BrowserWindow} from 'electron';
 const url = require('url');
 const path = require('path');
 
