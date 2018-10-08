@@ -26,6 +26,7 @@
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "devtron": "^1.4.0",
     "electron-reload": "^1.2.5"
   }
 }
