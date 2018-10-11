@@ -1,9 +1,13 @@
+// created by faridvatani
+// Project name Wifi Scanner 
+
 import {app , BrowserWindow} from 'electron';
 import url from 'url';
 import path from 'path';
 import ElectronReload from 'electron-reload';
 ElectronReload(__dirname);
 import devtron from 'devtron';
+
 
 app.on('ready' , function(){
    devtron.install();
