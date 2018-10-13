@@ -1,7 +1,3 @@
-// created by faridvatani
-// Project name Wifi Scanner 
-// date : 
-
 import {app , BrowserWindow} from 'electron';
 import url from 'url';
 import path from 'path';
