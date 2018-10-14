@@ -1,16 +1,48 @@
-import {app , BrowserWindow} from 'electron';
-import url from 'url';
-import path from 'path';
+import { app , BrowserWindow } from 'electron';
+import windowStateKeeper from 'electron-window-state';
 import ElectronReload from 'electron-reload';
 ElectronReload(__dirname);
-import devtron from 'devtron';
+
+import Devtron from 'devtron';
+
+app.on('ready' , () => {
+    Devtron.install();
+
+    let mainWindowState = windowStateKeeper({
+        defaultWidth : 1200,
+        defaultHeight : 600
+    });
+
+    let mainWin = new BrowserWindow({ 
+        width : mainWindowState.width, 
+        height : mainWindowState.height , 
+        x : mainWindowState.x,
+        y : mainWindowState.y,
+        show : false,
+        backgroundColor : '#e74c3c' });
+
+    mainWindowState.manage(mainWin);
+
+    let splashScreen = new BrowserWindow({ 
+        width : 800 , 
+        height :800 , 
+//        transparent: true,
+//        backgroundColor : '#1abc9c',
+        frame : false});
+
+    mainWin.on('closed' , () => {
+        app.quit();
+        mainWin = null;
+    })
+
+    splashScreen.on('closed' , () => splashScreen = null );
 
 
-app.on('ready' , function(){
-   devtron.install();
-   let mainWin = new BrowserWindow({width : 800 , height : 600});
-   mainWin.loadURL(url.format({
-    pathname : path.join(__dirname , "index.html"),
-    protocol : 'file:'
-    }));
-})
+    mainWin.loadURL('https://github.com');
+    splashScreen.loadURL(`file://${__dirname}/index.html`);
+
+    mainWin.on('ready-to-show' , () => {
+        mainWin.show();
+        splashScreen.close();
+    })
+});
