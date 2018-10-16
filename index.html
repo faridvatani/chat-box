@@ -7,8 +7,13 @@
   <style>
     html , body {
         height: 100%;
-        overflow: hidden
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        border-radius: 400px;
+        background: linear-gradient(135deg, #80f9b7 0%, #9abdeb 100%);
     }
+
     .container {
         display: flex;
         flex-direction: column;
@@ -17,12 +22,25 @@
         height: 100%;
     }
 
+    .h2 {
+        display: block;
+        font-size: 1.5em;
+        margin-top: 0.83em;
+        margin-bottom: 0.83em;
+        margin-left: 0;
+        margin-right: 0;
+        font-weight: bold;
+    }
+    
+    .splash-title {
+        color: white;
+    }
 </style>
 </head>
 <body>
     <div class="container">
-      <img src="img/wifilogo.jpg" alt="wifi logo">
-      <h2>WIFI - Scanner</h2>
+    <!--  <img src="img/wifilogo.jpg" alt="wifi logo">-->
+      <h2 class="splash-title">WIFI - SCANNER</h2>
   </div>
 </body>
 </html>

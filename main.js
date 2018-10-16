@@ -24,9 +24,9 @@ app.on('ready' , () => {
     mainWindowState.manage(mainWin);
 
     let splashScreen = new BrowserWindow({ 
-        width : 600 , 
-        height :600 , 
-//        transparent: true,
+        width : 500 , 
+        height : 500 , 
+       transparent: true,
 //        backgroundColor : '#1abc9c',
         frame : false});
 
@@ -38,7 +38,7 @@ app.on('ready' , () => {
     splashScreen.on('closed' , () => splashScreen = null );
 
 
-    mainWin.loadURL('http://faridvatani.ir');
+    mainWin.loadURL('http://github.com');
     splashScreen.loadURL(`file://${__dirname}/index.html`);
 
     mainWin.on('ready-to-show' , () => {
