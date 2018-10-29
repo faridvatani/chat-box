@@ -22,7 +22,8 @@
   "homepage": "https://github.com/faridvatani/wifi-scanner#readme",
   "dependencies": {
     "electron": "^3.0.2",
-    "electron-window-state": "^5.0.1"
+    "electron-window-state": "^5.0.1",
+    "node-wifi": "^2.0.4"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
