@@ -1,2 +1,2 @@
-# wifi-scanner
-wifi scanner with electron.js
+# chat-box
+Chatbox is a cross-platform application for aparat streamers
