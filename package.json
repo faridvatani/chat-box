@@ -1,7 +1,7 @@
 {
-  "name": "wifi-scanner",
+  "name": "chat-box",
   "version": "1.0.0",
-  "description": "wifi scanner with electron.js",
+  "description": "Chatbox is a cross-platform application for aparat streamers",
   "main": "main.js",
   "scripts": {
     "start": "electron -r babel-register .",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/faridvatani/wifi-scanner.git"
+    "url": "git+https://github.com/faridvatani/chat-box.git"
   },
   "keywords": [
     "electron"
@@ -17,9 +17,9 @@
   "author": "faridvatani",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/faridvatani/wifi-scanner/issues"
+    "url": "https://github.com/faridvatani/chat-box/issues"
   },
-  "homepage": "https://github.com/faridvatani/wifi-scanner#readme",
+  "homepage": "https://github.com/faridvatani/chat-box#readme",
   "dependencies": {
     "electron": "^3.0.2",
     "electron-window-state": "^5.0.1",
