@@ -22,8 +22,7 @@
   "homepage": "https://github.com/faridvatani/chat-box#readme",
   "dependencies": {
     "electron": "^5.0.3",
-    "electron-window-state": "^5.0.1",
-    "node-wifi": "^2.0.4"
+    "electron-window-state": "^5.0.1"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",
