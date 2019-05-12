@@ -27,7 +27,7 @@ app.on('ready' , () => {
         width : 500 , 
         height : 500 , 
        transparent: true,
-//        backgroundColor : '#1abc9c',
+    //    backgroundColor : '#1abc9c',
         frame : false});
 
     mainWin.on('closed' , () => {
@@ -38,7 +38,7 @@ app.on('ready' , () => {
     splashScreen.on('closed' , () => splashScreen = null );
 
 
-    mainWin.loadURL('http://aparat.com/');
+    mainWin.loadURL('http://aparat.com//livelist');
     splashScreen.loadURL(`file://${__dirname}/index.html`);
 
     mainWin.on('ready-to-show' , () => {
