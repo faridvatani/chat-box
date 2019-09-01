@@ -9,7 +9,7 @@ app.on('ready' , () => {
     Devtron.install();
 
     let mainWindowState = windowStateKeeper({
-        defaultWidth : 1200,
+        defaultWidth : 800,
         defaultHeight : 600
     });
 
@@ -19,16 +19,18 @@ app.on('ready' , () => {
         x : mainWindowState.x,
         y : mainWindowState.y,
         show : false,
-        backgroundColor : '#e74c3c' });
+        // frame : false,
+        // backgroundColor : '#2A2A2A' 
+    });
 
     mainWindowState.manage(mainWin);
 
     let splashScreen = new BrowserWindow({ 
-        width : 500 , 
-        height : 500 , 
-       transparent: true,
-    //    backgroundColor : '#1abc9c',
-        frame : false});
+        width : 800 , 
+        height : 600 , 
+        transparent: false,
+        frame : false
+    });
 
     mainWin.on('closed' , () => {
         app.quit();
@@ -38,11 +40,15 @@ app.on('ready' , () => {
     splashScreen.on('closed' , () => splashScreen = null );
 
 
-    mainWin.loadURL('http://aparat.com//livelist');
+    // mainWin.loadURL('http://aparat.com//livelist');
+    mainWin.loadURL(`file://${__dirname}/login.html`);
     splashScreen.loadURL(`file://${__dirname}/index.html`);
 
     mainWin.on('ready-to-show' , () => {
         mainWin.show();
         splashScreen.close();
     })
+
+
+
 });
