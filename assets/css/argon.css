@@ -99,7 +99,8 @@ body
     line-height: 1.5;
     margin: 0;
     text-align: right;
-    color: #525f7f;
+    color: #ffffff;
+    background: #1f1b25;
 
 }
 .banner__blob,.banner--front .banner__blob{position:absolute;top:calc(10% + 120px);right:0px;z-index:-3}
@@ -513,7 +514,7 @@ h6,
 h1,
 .h1
 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 h2,
@@ -751,6 +752,7 @@ pre code
 
 .container
 {
+    text-align: -webkit-center;
     width: 100%;
     margin-right: auto;
     margin-left: auto; 
@@ -797,7 +799,7 @@ pre code
 
 .row
 {
-    display: flex;
+    display: inline-block;
 
     margin-right: -15px;
     margin-left: -15px; 
