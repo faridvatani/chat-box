@@ -22,7 +22,7 @@
   "homepage": "https://github.com/faridvatani/chat-box#readme",
   "dependencies": {
     "axios": "^0.21.2",
-    "electron": "^5.0.3",
+    "electron": "^11.5.0",
     "electron-window-state": "^5.0.1",
     "jwt-decode": "^2.2.0",
     "request": "^2.88.0"
